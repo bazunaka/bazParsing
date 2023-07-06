@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="SqlDialectMappings">
-    <file url="file://E:/!Scripts/bazFitness/create_db.sql" dialect="PostgreSQL" />
-    <file url="file://E:/!Scripts/bazFitness/create_tables.sql" dialect="PostgreSQL" />
-    <file url="file://E:/!Scripts/bazFitness/insert_data.sql" dialect="PostgreSQL" />
-  </component>
-</project>
