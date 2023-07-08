@@ -7,6 +7,7 @@
       </database-info>
       <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
       <secret-storage>master_key</secret-storage>
+      <auth-provider>pgpass</auth-provider>
       <user-name>postgres</user-name>
       <schema-mapping>
         <introspection-scope>
@@ -15,6 +16,11 @@
           </node>
         </introspection-scope>
       </schema-mapping>
+    </data-source>
+    <data-source name="db" uuid="b7f3b96d-2d74-4b13-820d-17a02ff187ca">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="SQLITE" exact-version="0" />
+      <auth-provider>no-auth</auth-provider>
+      <schema-mapping />
     </data-source>
   </component>
 </project>
