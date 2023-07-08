@@ -5,14 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdfba406-8862-4838-ae66-c83ff70884dd" name="Changes" comment="new commit">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/59f97ff7-3f78-472b-8ef7-6151c56d429f.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/59f97ff7-3f78-472b-8ef7-6151c56d429f.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/django-admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/django-admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bazParsing/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/bazParsing/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bazParsing/parsing/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/bazParsing/parsing/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bazParsing/parsing/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/bazParsing/parsing/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bazParsing/bazParsing_service/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/bazParsing/bazParsing_service/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bazParsing/parsing/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/bazParsing/parsing/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
