@@ -1,5 +1,6 @@
 from django.db import models
 
+
 # Create your models here.
 
 class Apartment(models.Model):
@@ -15,3 +16,26 @@ class Apartment(models.Model):
     mcd_name = models.CharField(max_length=50, blank=True, verbose_name='Название МЦД')
     rent = models.IntegerField(verbose_name='Плата за аренду')
     mortgage = models.IntegerField(verbose_name='Ипотека')
+
+    class Meta:
+        verbose_name = 'Обьекты'
+        verbose_name_plural = 'Обьекты'
+
+    def __str__(self):
+        return self.name
+
+
+class Development(models.Model):
+    name = models.CharField(max_length=50, verbose_name='Название застройщика')
+
+    class Meta:
+        verbose_name = 'Застройщики'
+        verbose_name_plural = 'Застройщики'
+
+    def __str__(self):
+        return self.name
+
+
+class Site(models.Model):
+    url = models.URLField()
+    name = models.ForeignKey('Development')
