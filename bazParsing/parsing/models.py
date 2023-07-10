@@ -9,7 +9,7 @@ class Apartment(models.Model):
     price = models.IntegerField(verbose_name='Цена')
     date = models.DateField(verbose_name='Дата сдачи ЖК')
     decor = models.BooleanField(verbose_name='Отделка')
-    date_view = models.DateField(verbose_name='Дата просмотра')
+    date_view = models.DateField(verbose_name='Дата просмотра', auto_now_add=True)
     is_metro = models.BooleanField(verbose_name='Наличие метро')
     metro_name = models.CharField(max_length=50, blank=True, verbose_name='Название метро')
     is_mcd = models.BooleanField(verbose_name='Наличие МЦД')
@@ -37,5 +37,12 @@ class Development(models.Model):
 
 
 class Site(models.Model):
-    url = models.URLField()
-    name = models.ForeignKey('Development')
+    url = models.URLField(unique=True)
+    development = models.ForeignKey('Development', on_delete=models.CASCADE, verbose_name='Застройщик', null=True)
+
+    class Meta:
+        verbose_name = 'Сайты'
+        verbose_name_plural = 'Сайты'
+
+    def __str__(self):
+        return self.url
