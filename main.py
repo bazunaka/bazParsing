@@ -1,5 +1,4 @@
 import requests
-import csv
 from bs4 import BeautifulSoup
 
 
@@ -47,11 +46,7 @@ def main():
     # url = 'https://pumpmuscles.ru/bodibilding/anatomiya-myishts-cheloveka-bodibildera.html#Трапеции'
     # print(get_multiple_data(get_html(url)))
     # url = 'https://dailyfit.ru/katalog-uprazhnenij/?tax_celevye_myshcy%5B%5D=44&tax_vid_uprazhnenija%5B%5D=18' грудь
-    # url = 'https://dailyfit.ru/katalog-uprazhnenij/?tax_celevye_myshcy%5B%5D=31&tax_vid_uprazhnenija%5B%5D=18' плечи
-    # url = 'https://dailyfit.ru/katalog-uprazhnenij/?tax_celevye_myshcy%5B%5D=33&tax_vid_uprazhnenija%5B%5D=18' бицепс
-    # url = 'https://dailyfit.ru/katalog-uprazhnenij/?tax_celevye_myshcy%5B%5D=71&tax_vid_uprazhnenija%5B%5D=18' предплечья
-    # url = 'https://dailyfit.ru/katalog-uprazhnenij/?tax_celevye_myshcy%5B%5D=45&tax_vid_uprazhnenija%5B%5D=18' пресс
-    url = ''
+    url = 'https://dailyfit.ru/katalog-uprazhnenij/?tax_celevye_myshcy%5B%5D=29&tax_vid_uprazhnenija%5B%5D=18'
     print(get_workouts(get_html(url)))
 
 

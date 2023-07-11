@@ -1,0 +1,19 @@
+Index: main.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import requests\r\nfrom bs4 import BeautifulSoup\r\n\r\n\r\ndef get_html(url):\r\n    r = requests.get(url)\r\n    return r.text\r\n\r\n\r\ndef get_data(html):\r\n    soup = BeautifulSoup(html, \"lxml\")\r\n    ul = soup.find(\r\n        'ul',\r\n        {\"class\": \"ez-toc-list ez-toc-list-level-1\"}\r\n    )\r\n    li = ul.find_all('li')\r\n\r\n    for a in li:\r\n        name = a.find_next('a').text\r\n        print(name)\r\n\r\n\r\ndef get_workouts(html):\r\n    soup = BeautifulSoup(html, \"lxml\")\r\n    div = soup.find(\r\n        'div',\r\n        {\"class\": \"ui two stackable cards\"}\r\n    )\r\n    a = div.findAll(\r\n        'div',\r\n        {\"class\": \"content\"}\r\n    )\r\n    for aq in a:\r\n        name = aq.find_next('a').text\r\n        print(name)\r\n\r\n\r\ndef get_multiple_data(html):\r\n    soup = BeautifulSoup(html, \"lxml\")\r\n    h3 = soup.findAll('li')\r\n    # h3_text = h3.findAllNext('li')\r\n    return dir(h3)\r\n\r\n\r\ndef main():\r\n    # url = 'https://pumpmuscles.ru/bodibilding/anatomiya-myishts-cheloveka-bodibildera.html#Трапеции'\r\n    # print(get_multiple_data(get_html(url)))\r\n    # url = 'https://dailyfit.ru/katalog-uprazhnenij/?tax_celevye_myshcy%5B%5D=44&tax_vid_uprazhnenija%5B%5D=18' грудь\r\n    url = 'https://dailyfit.ru/katalog-uprazhnenij/?tax_celevye_myshcy%5B%5D=29&tax_vid_uprazhnenija%5B%5D=18'\r\n    print(get_workouts(get_html(url)))\r\n\r\n\r\nif __name__ == '__main__':\r\n    main()\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/main.py b/main.py
+--- a/main.py	(revision cc6551ad23dffbd420ec13add4b5dd1e2a8f612e)
++++ b/main.py	(date 1682448478305)
+@@ -46,7 +46,7 @@
+     # url = 'https://pumpmuscles.ru/bodibilding/anatomiya-myishts-cheloveka-bodibildera.html#Трапеции'
+     # print(get_multiple_data(get_html(url)))
+     # url = 'https://dailyfit.ru/katalog-uprazhnenij/?tax_celevye_myshcy%5B%5D=44&tax_vid_uprazhnenija%5B%5D=18' грудь
+-    url = 'https://dailyfit.ru/katalog-uprazhnenij/?tax_celevye_myshcy%5B%5D=29&tax_vid_uprazhnenija%5B%5D=18'
++    url = 'https://dailyfit.ru/katalog-uprazhnenij/?tax_celevye_myshcy%5B%5D=75&tax_vid_uprazhnenija%5B%5D=18'
+     print(get_workouts(get_html(url)))
+ 
+ 
