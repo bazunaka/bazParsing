@@ -9,8 +9,13 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
 =======
     <list default="true" id="cdfba406-8862-4838-ae66-c83ff70884dd" name="Changes" comment="new commit">
+      <change afterPath="$PROJECT_DIR$/bazParsing/parsing/migrations/0002_auto_20230708_2058.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bazParsing/parsing/migrations/0003_site.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bazParsing/bazParsing_service/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/bazParsing/bazParsing_service/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bazParsing/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/bazParsing/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bazParsing/parsing/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/bazParsing/parsing/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bazParsing/parsing/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/bazParsing/parsing/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bazParsing/parsing/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/bazParsing/parsing/apps.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bazParsing/parsing/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/bazParsing/parsing/models.py" afterDir="false" />
 >>>>>>> 3d2c373a435d17adc4ef021985d2695b5ecae037
     </list>
