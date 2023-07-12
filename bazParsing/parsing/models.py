@@ -18,7 +18,7 @@ class Apartment(models.Model):
     mortgage = models.IntegerField(verbose_name='Ипотека')
 
     class Meta:
-        verbose_name = 'Обьекты'
+        verbose_name = 'Обьект'
         verbose_name_plural = 'Обьекты'
 
     def __str__(self):
@@ -29,7 +29,7 @@ class Development(models.Model):
     name = models.CharField(max_length=50, verbose_name='Название застройщика')
 
     class Meta:
-        verbose_name = 'Застройщики'
+        verbose_name = 'Застройщик'
         verbose_name_plural = 'Застройщики'
 
     def __str__(self):
@@ -41,7 +41,7 @@ class Site(models.Model):
     development = models.ForeignKey('Development', on_delete=models.CASCADE, verbose_name='Застройщик', null=True)
 
     class Meta:
-        verbose_name = 'Сайты'
+        verbose_name = 'Сайт'
         verbose_name_plural = 'Сайты'
 
     def __str__(self):
