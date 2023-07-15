@@ -8,11 +8,13 @@
       <jdbc-url>jdbc:postgresql://localhost:5432/</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
-    <data-source source="LOCAL" name="db" uuid="b7f3b96d-2d74-4b13-820d-17a02ff187ca">
+    <data-source source="LOCAL" name="Django default" uuid="de2fcc33-0bb6-4bff-8818-4cdb18455099">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/bazParsing/bazParsing_service/settings.py</remarks>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:C:\Users\user\Documents\GitHub\bazParsing\bazParsing\db.sqlite3</jdbc-url>
+      <jdbc-url>jdbc:sqlite:F:\github\bazParsing\bazParsing\db.sqlite3</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>

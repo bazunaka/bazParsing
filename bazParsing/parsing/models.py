@@ -5,6 +5,8 @@ from django.db import models
 
 class Apartment(models.Model):
     name = models.CharField(max_length=50, verbose_name='Название ЖК')
+    development = models.ForeignKey('Development', on_delete=models.CASCADE, verbose_name='Застройщик')
+    url = models.URLField(unique=True, verbose_name='Ссылка')
     square = models.FloatField(verbose_name='Площадь')
     price = models.IntegerField(verbose_name='Цена')
     date = models.DateField(verbose_name='Дата сдачи ЖК')
@@ -34,15 +36,3 @@ class Development(models.Model):
 
     def __str__(self):
         return self.name
-
-
-class Site(models.Model):
-    url = models.URLField(unique=True)
-    development = models.ForeignKey('Development', on_delete=models.CASCADE, verbose_name='Застройщик', null=True)
-
-    class Meta:
-        verbose_name = 'Сайт'
-        verbose_name_plural = 'Сайты'
-
-    def __str__(self):
-        return self.url
