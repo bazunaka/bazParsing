@@ -6,4 +6,4 @@ from .models import Development, Apartment
 
 def home_view(request):
     query_set = Apartment.objects.all()
-    return render(request, 'home.html', {'object_list': query_set})
+    return render(request, 'parsing/home.html', {'object_list': query_set})
