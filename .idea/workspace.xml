@@ -5,8 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdfba406-8862-4838-ae66-c83ff70884dd" name="Changes" comment="new commit">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_07_2023_16_06_[Changes]/shelved.patch" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/bazParsing/parsing/migrations/0002_auto_20230708_2058.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bazParsing/parsing/migrations/0003_site.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bazParsing/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/bazParsing/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bazParsing/parsing/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/bazParsing/parsing/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bazParsing/parsing/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/bazParsing/parsing/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bazParsing/parsing/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/bazParsing/parsing/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bazParsing/parsing/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/bazParsing/parsing/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

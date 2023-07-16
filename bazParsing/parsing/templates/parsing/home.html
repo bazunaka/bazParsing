@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %} Домашняя страница {% endblock %}
+{% block content %}
+    {% for obj in object_list %}
+        <div class="card my-2" style="width: 18rem;">
+            <img src="1.png" class="card-img-top" width="120" height="150">
+            <div class="card-body">
+                <h5 class="card-title">{{ obj }}</h5>
+                <p class="card-text">
+                    <p>{{ obj.price }} руб.</p>
+                    <p> Просмотрено: {{ obj.date_view }}</p>
+                    <p> Площадь: {{ obj.square }}</p>
+                    <p> Отделка: {{ obj.decor }}</p>
+                    <p> Дата дачи: {{ obj.date }}</p>
+                </p>
+                <a href="{{ obj.url }}" class="btn btn-primary">{{ obj }}</a>
+            </div>
+        </div>
+    {% endfor %}
+{% endblock %}
