@@ -23,4 +23,12 @@
             </div>
         </div>
     {% endfor %}
+    <form method="POST" action="">
+        <p><select name="dev">
+            {% for dev in dev_list %}
+                <option>{{ dev.name }}</option>
+            {% endfor %}
+        </select></p>
+        <p><input type="submit"></p>
+    </form>
 {% endblock %}

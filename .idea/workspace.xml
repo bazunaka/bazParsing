@@ -7,7 +7,7 @@
     <list default="true" id="cdfba406-8862-4838-ae66-c83ff70884dd" name="Changes" comment="new commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bazParsing/parsing/templates/parsing/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/bazParsing/parsing/templates/parsing/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bazParsing/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/bazParsing/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bazParsing/parsing/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/bazParsing/parsing/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +101,7 @@
       <workItem from="1681114843086" duration="5343000" />
       <workItem from="1688656207106" duration="1538000" />
       <workItem from="1688664480084" duration="7302000" />
-      <workItem from="1689517564413" duration="8024000" />
+      <workItem from="1689517564413" duration="11860000" />
     </task>
     <task id="LOCAL-00001" summary="new commit">
       <created>1688763400899</created>
