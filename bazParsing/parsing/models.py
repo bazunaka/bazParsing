@@ -18,6 +18,7 @@ class Apartment(models.Model):
     mcd_name = models.CharField(max_length=50, blank=True, verbose_name='Название МЦД')
     rent = models.IntegerField(verbose_name='Плата за аренду')
     mortgage = models.IntegerField(verbose_name='Ипотека')
+    image = models.FilePathField(path='F:/github/bazParsing/bazParsing/media/', verbose_name='Изображение')
 
     class Meta:
         verbose_name = 'Обьект'
