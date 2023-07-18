@@ -5,19 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdfba406-8862-4838-ae66-c83ff70884dd" name="Changes" comment="new commit">
-      <change afterPath="$PROJECT_DIR$/bazParsing/static/admin/img/apartmentimg/pik_belaya_dacha-4488.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bazParsing/static/admin/img/apartmentimg/pik_belaya_dacha-4488.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bazParsing/static/admin/img/apartmentimg/pik_odintsovo-3961.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bazParsing/static/admin/img/apartmentimg/pik_odintsovo-4235.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bazParsing/static/apartmentimg/pik_belaya_dacha-4488.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bazParsing/static/apartmentimg/pik_odintsovo-3961.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bazParsing/static/apartmentimg/pik_odintsovo-4235.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5851a752-a5bb-4a03-95b6-76dadd667bd9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ef8b848b-c119-47ed-97b3-94369c783991.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bazParsing/bazParsing_service/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/bazParsing/bazParsing_service/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bazParsing/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/bazParsing/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bazParsing/parsing/templates/parsing/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/bazParsing/parsing/templates/parsing/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bazParsing/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/bazParsing/templates/base.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +105,7 @@
       <workItem from="1688664480084" duration="7302000" />
       <workItem from="1689517564413" duration="11860000" />
       <workItem from="1689581857118" duration="958000" />
-      <workItem from="1689582864540" duration="9714000" />
+      <workItem from="1689582864540" duration="12640000" />
     </task>
     <task id="LOCAL-00001" summary="new commit">
       <created>1688763400899</created>
@@ -154,7 +145,7 @@
     <option name="LAST_COMMIT_MESSAGE" value="add widget" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/bazParsing$manage.coverage" NAME="manage Coverage Results" MODIFIED="1689623804408" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bazParsing" />
     <SUITE FILE_PATH="coverage/bazParsing$main.coverage" NAME="main Coverage Results" MODIFIED="1680985756214" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/bazParsing$manage.coverage" NAME="manage Coverage Results" MODIFIED="1689678140842" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bazParsing" />
   </component>
 </project>
