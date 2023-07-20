@@ -1,23 +1,24 @@
 import requests
 from bs4 import BeautifulSoup
 
+headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:47.0) Gecko/20100101 Firefox/47.0',
+           'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'}
+
 
 def get_html(url):
-    r = requests.get(url)
-    return r.text
+    r = requests.get(url, headers=headers)
+    return r
 
 
 def get_data(html):
-    soup = BeautifulSoup(html, "lxml")
-    ul = soup.find(
-        'ul',
-        {"class": "ez-toc-list ez-toc-list-level-1"}
-    )
-    li = ul.find_all('li')
+    if get_html(html).status_code == 200:
+        soup = BeautifulSoup(get_html(html).content, 'html.parser')
+        main_a = soup.find('a', id='listing_flat')
+        #span_list = main_a.find_all('span', attrs={'class': 'styles__BulkFloor-j8px38-3 haaSuT'})
+        span_list = main_a.find_all('div', attrs={'class': r'[styles__\*]'})
+        for i in range(3):
+            print(span_list[i].get_text())
 
-    for a in li:
-        name = a.find_next('a').text
-        print(name)
 
 
 def get_workouts(html):
@@ -43,11 +44,8 @@ def get_multiple_data(html):
 
 
 def main():
-    # url = 'https://pumpmuscles.ru/bodibilding/anatomiya-myishts-cheloveka-bodibildera.html#Трапеции'
-    # print(get_multiple_data(get_html(url)))
-    # url = 'https://dailyfit.ru/katalog-uprazhnenij/?tax_celevye_myshcy%5B%5D=44&tax_vid_uprazhnenija%5B%5D=18' грудь
-    url = 'https://dailyfit.ru/katalog-uprazhnenij/?tax_celevye_myshcy%5B%5D=29&tax_vid_uprazhnenija%5B%5D=18'
-    print(get_workouts(get_html(url)))
+    url = 'https://www.pik.ru/search/bd'
+    print(get_data(url))
 
 
 if __name__ == '__main__':
