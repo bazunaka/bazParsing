@@ -15,9 +15,14 @@ def get_data(html):
         soup = BeautifulSoup(get_html(html).content, 'html.parser')
         main_a = soup.find('a', id='listing_flat')
         #span_list = main_a.find_all('span', attrs={'class': 'styles__BulkFloor-j8px38-3 haaSuT'})
-        span_list = main_a.find_all('div', attrs={'class': r'[styles__\*]'})
-        for i in range(3):
+        #span_list = main_a.find_all('div', attrs={'class': r'\bs\w+.*'})
+        #for i in range(1):
+        #    print(span_list[i].get_text())
+        span_list = main_a.find_all('span')
+        div_list = main_a.find_all('div')
+        for i in range(len(span_list)-1):
             print(span_list[i].get_text())
+        #print(div_list)
 
 
 
