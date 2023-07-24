@@ -37,3 +37,18 @@ class Development(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class ResidentialArea(models.Model):
+    name = models.CharField(max_length=50, verbose_name='Название ЖК')
+    date = models.CharField(max_length=25, verbose_name='Дата сдачи ЖК')
+    price = models.CharField(max_length=25, verbose_name='Цена')
+    metro_name = models.CharField(max_length=50, verbose_name='Название метро')
+    road_time = models.CharField(max_length=50, verbose_name='Время до метро')
+
+    class Meta:
+        verbose_name = 'Жилой комплекс'
+        verbose_name_plural = 'Жилые комплексы'
+
+    def __str__(self):
+        return self.name

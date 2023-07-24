@@ -14,43 +14,34 @@ def get_data(html):
     if get_html(html).status_code == 200:
         soup = BeautifulSoup(get_html(html).content, 'html.parser')
         main_a = soup.find('a', id='listing_flat')
-        #span_list = main_a.find_all('span', attrs={'class': 'styles__BulkFloor-j8px38-3 haaSuT'})
-        #span_list = main_a.find_all('div', attrs={'class': r'\bs\w+.*'})
-        #for i in range(1):
+        # span_list = main_a.find_all('span', attrs={'class': 'styles__BulkFloor-j8px38-3 haaSuT'})
+        # span_list = main_a.find_all('div', attrs={'class': r'\bs\w+.*'})
+        # for i in range(1):
         #    print(span_list[i].get_text())
         span_list = main_a.find_all('span')
         div_list = main_a.find_all('div')
-        for i in range(len(span_list)-1):
+        for i in range(len(span_list) - 1):
             print(span_list[i].get_text())
-        #print(div_list)
+        for k in range(len(div_list) - 1):
+            print(div_list[k].get_text())
+        # print(div_list)
 
 
-
-def get_workouts(html):
-    soup = BeautifulSoup(html, "lxml")
-    div = soup.find(
-        'div',
-        {"class": "ui two stackable cards"}
-    )
-    a = div.findAll(
-        'div',
-        {"class": "content"}
-    )
-    for aq in a:
-        name = aq.find_next('a').text
-        print(name)
-
-
-def get_multiple_data(html):
-    soup = BeautifulSoup(html, "lxml")
-    h3 = soup.findAll('li')
-    # h3_text = h3.findAllNext('li')
-    return dir(h3)
+def get_classes(html):
+    classes = []
+    if get_html(html).status_code == 200:
+        soup = BeautifulSoup(get_html(html).content, 'html.parser')
+        for element in soup.find_all('div', class_=True):
+            classes.extend(element["class"])
+        for i in range(len(classes)-1):
+            classes[i].s
+    print(classes)
 
 
 def main():
     url = 'https://www.pik.ru/search/bd'
-    print(get_data(url))
+    #print(get_data(url))
+    get_classes(url)
 
 
 if __name__ == '__main__':
