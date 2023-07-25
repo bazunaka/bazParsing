@@ -1,6 +1,8 @@
 import requests
 from bs4 import BeautifulSoup
 
+import time
+
 headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:47.0) Gecko/20100101 Firefox/47.0',
            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'}
 
@@ -11,20 +13,14 @@ def get_html(url):
 
 
 def get_data(html):
+    time.sleep(10)
     if get_html(html).status_code == 200:
         soup = BeautifulSoup(get_html(html).content, 'html.parser')
-        main_a = soup.find('a', id='listing_flat')
-        # span_list = main_a.find_all('span', attrs={'class': 'styles__BulkFloor-j8px38-3 haaSuT'})
-        # span_list = main_a.find_all('div', attrs={'class': r'\bs\w+.*'})
-        # for i in range(1):
-        #    print(span_list[i].get_text())
-        span_list = main_a.find_all('span')
-        div_list = main_a.find_all('div')
-        for i in range(len(span_list) - 1):
-            print(span_list[i].get_text())
-        for k in range(len(div_list) - 1):
-            print(div_list[k].get_text())
-        # print(div_list)
+        main_a = soup.find('div', attrs={'class': '_9330de7794--cards--pA5SE'})
+        div_list = main_a.find_all('div', attrs={'data-name': 'ResidentialComplexCardWrapper'})
+        for i in range(len(div_list)):
+            print(div_list[i].get_text())
+        print(div_list)
 
 
 def get_classes(html):
@@ -39,9 +35,9 @@ def get_classes(html):
 
 
 def main():
-    url = 'https://www.pik.ru/search/bd'
-    #print(get_data(url))
-    get_classes(url)
+    url = 'https://www.cian.ru/zastroishchik-pik-9/?apartmentsWithDecoration=true&minPrice=3500000&maxPrice=5350000&deadline=2024#projects'
+    print(get_data(url))
+    # get_classes(url)
 
 
 if __name__ == '__main__':
